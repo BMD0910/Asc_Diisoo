@@ -1,0 +1,11 @@
+.app-shell .site-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.app-shell .site-header--scrolled {
+  background: rgba(17, 18, 18, 0.94) !important;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.32);
+}

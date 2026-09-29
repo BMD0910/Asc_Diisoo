@@ -1,0 +1,77 @@
+.discipline-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.discipline-card {
+  width: 100%;
+  min-height: 250px;
+}
+
+.discipline-art {
+  min-height: 0;
+}
+
+@media (max-width: 1100px) {
+  .discipline-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .discipline-card {
+    min-height: 290px;
+  }
+
+  .discipline-art {
+    inset: 0 0 100px;
+  }
+
+  .discipline-info {
+    min-height: 100px;
+    padding: 16px 14px 14px;
+  }
+}
+
+@media (max-width: 760px) {
+  .discipline-grid {
+    display: grid !important;
+    width: 100% !important;
+    grid-template-columns: 1fr !important;
+    gap: 14px;
+  }
+
+  .discipline-card {
+    width: 100% !important;
+    min-height: 300px;
+  }
+
+  .discipline-art {
+    inset: 0 0 105px;
+  }
+
+  .discipline-info {
+    min-height: 105px;
+    padding: 16px 14px 14px;
+  }
+
+  .discipline-info h3 {
+    font-size: 21px;
+  }
+
+  .discipline-info p {
+    font-size: 11px;
+  }
+
+  .discipline-icon {
+    left: 14px;
+    width: 42px;
+    height: 42px;
+    font-size: 19px;
+  }
+
+  .disciplines-more {
+    width: 100%;
+    margin-top: 16px;
+  }
+}
